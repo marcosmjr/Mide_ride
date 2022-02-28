@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FundoPlayer"
+    tools:context=".Player.Player">
+
+    <ImageView
+        android:id="@+id/barra_topo_r"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/topo_player" />
+
+    <ImageView
+        android:id="@+id/barra_topo_p"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        app:layout_constraintEnd_toEndOf="@+id/barra_topo_r"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/retangulo_topo" />
+
+    <ImageButton
+        android:id="@+id/pVoltar"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="16dp"
+        android:background="@null"
+        android:scaleType="fitXY"
+        app:layout_constraintStart_toStartOf="@+id/barra_topo_p"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/voltar" />
+
+    <ImageButton
+        android:id="@+id/pExpandir"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="26dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pVoltar"
+        app:srcCompat="@drawable/expandir" />
+
+    <ImageButton
+        android:id="@+id/pLista"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="28dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/barra_topo_p"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/options3" />
+
+    <TextView
+        android:id="@+id/nomeAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/allerta"
+        android:text="Tocando :"
+        android:textAllCaps="true"
+        android:textColor="@color/corzassa"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/pOptions"
+        app:layout_constraintStart_toStartOf="@+id/pExpandir"
+        app:layout_constraintTop_toBottomOf="@+id/barra_topo_p" />
+
+    <TextView
+        android:id="@+id/nomeAlbum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALBUM"
+        android:textColor="@color/corLetra"
+        app:layout_constraintEnd_toEndOf="@+id/nomeAlbum"
+        app:layout_constraintStart_toStartOf="@+id/nomeAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/nomeAlbum" />
+
+
+    <ImageButton
+        android:id="@+id/pOptions"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="60dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/pExpandir"
+        app:layout_constraintTop_toBottomOf="@+id/pLista"
+        app:srcCompat="@drawable/options2" />
+
+    <ImageButton
+        android:id="@+id/imgAlbum"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:background="@android:color/white"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/nomeAlbum"
+        app:layout_constraintStart_toStartOf="@+id/nomeAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/nomeAlbum2" />
+
+    <ImageButton
+        android:id="@+id/equalizadorAlbum"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAlbum"
+        app:srcCompat="@drawable/equalizador" />
+
+    <TextView
+        android:id="@+id/nomeMusicaAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/allerta"
+        android:text="MUSICA"
+        android:textAllCaps="false"
+        android:textColor="@color/corzassa"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/favoriteAlbum"
+        app:layout_constraintStart_toEndOf="@+id/equalizadorAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/imgAlbum" />
+
+    <TextView
+        android:id="@+id/nomeAutorAlbum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="AUTOR"
+        android:textColor="@color/corLetra"
+        app:layout_constraintEnd_toEndOf="@+id/nomeMusicaAlbum"
+        app:layout_constraintStart_toStartOf="@+id/nomeMusicaAlbum"
+        app:layout_constraintTop_toBottomOf="@+id/nomeMusicaAlbum" />
+
+    <ImageButton
+        android:id="@+id/favoriteAlbum"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="@null"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.88"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgAlbum"
+        app:srcCompat="@drawable/nfavorite2" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/barraDOplayer2"
+        android:layout_width="400dp"
+        android:layout_height="100dp"
+        android:elevation="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="403dp"
+        android:layout_height="515dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/barra_player"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pOptions"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reciclaTab"
+            android:layout_width="403dp"
+            android:layout_height="515dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/barra_player"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pOptions"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

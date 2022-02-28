@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "548099572666",
+    "firebase_url": "https://mind-ride-aplicativo.firebaseio.com",
+    "project_id": "mind-ride-aplicativo",
+    "storage_bucket": "mind-ride-aplicativo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548099572666:android:5831b1b06ba6b860bb5383",
+        "android_client_info": {
+          "package_name": "com.exemple.mindride"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "548099572666-bs2lsd7dsp71e8itcrb5irjhhh89h88t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.exemple.mindride",
+            "certificate_hash": "92a44c03e060bb3fdc61ece009a4f00612dd8da6"
+          }
+        },
+        {
+          "client_id": "548099572666-micov6mvvv2rokjroakdgj6atoaamt7n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmS4_ME3w43NVTUcv6WB0yMWKI9Z4jzUc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "548099572666-micov6mvvv2rokjroakdgj6atoaamt7n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

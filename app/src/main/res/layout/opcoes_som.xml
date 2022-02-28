@@ -1,0 +1,2043 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:addStatesFromChildren="false"
+    android:alwaysDrawnWithCache="false"
+    android:animateLayoutChanges="true"
+    android:scrollbarSize="250dp"
+    android:scrollbarStyle="outsideInset">
+
+
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="wrap_content"
+        android:background="@color/corFundo"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/inicioLista"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_weight="5"
+            android:background="@color/corLetra"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="LISTA DE SONS PARA AUXILIO ÚNICO!"
+            android:textColor="@color/corPreta" />
+
+        <TextView
+            android:id="@+id/listaAgua"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="ÁGUA"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/pscinaLabel"
+                android:layout_width="342dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Pscina"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/pscinaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/drenagemLabel"
+                android:layout_width="344dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Drenagem de Água"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/drenagemPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/aguaFloresta"
+                android:layout_width="343dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Água de Floresta"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/florestaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/aguaCorrente"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Água Corrente"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/correntePlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de AMBIENTES-->
+
+        <TextView
+            android:id="@+id/listaAmbientes"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="AMBIENTES"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/escolaLabel"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Escola"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/escolaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de CHUVAS-->
+
+        <TextView
+            android:id="@+id/listaChuva"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="CHUVA"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chuvaTrovao"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Chuva com Trovão"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/trovaoPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chuvaLabel"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Chuva"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/chuvaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chuvaFloresta"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Chuva na Floresta"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/chuvaFlorestaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/chuvaPinga"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Chuva Pingando"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/chuvaPingandoPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de CORAÇÃO-->
+
+        <TextView
+            android:id="@+id/coracaoLista"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="CORAÇÃO"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/batidaLabel1"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Batida de Coração 1"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/batidaPlay1"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/batidaLabel12"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Batida de Coração 2"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/batidaPlay12"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/batidaLoop"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Loop de Batidas "
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/batidaLoopPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de ESCOVAS DE CABELO-->
+
+        <TextView
+            android:id="@+id/listaEscova"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="ESOVA DE CABELO"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/escovaPlastico"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Escova de Plastico"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/escovaPlasticoPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/escova"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Escova"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/escovaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/escolaProfunda"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Escova Profunda"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/escovaProfundaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ecovandoCabelo"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Escovando Cabelo"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/escovandoPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de ESPONJA-->
+
+        <TextView
+            android:id="@+id/listaEsponja"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="ESPONJA"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/apertandoEsponja"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Apertando Esponja"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/apertandoEsponjaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/fritandoEsponja"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Fritando Esponja"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/fritandoEsponjaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/ladrilhosEsponja"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Ladrilhos de Esponja"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/ladrilhosEsponjaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+
+        <!--Lista de FLORESTA-->
+
+
+        <TextView
+            android:id="@+id/listaFloresta"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="FLORESTA"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/loopDePassaros"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Loop de Passaros"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/loopDePassarosPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/passeioDeFerias"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Passeio de Férias"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/passeioDeFeriasPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal"/>
+
+        <!--Lista de GALOPE-->
+
+        <TextView
+            android:id="@+id/listaGalope"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="GALOPE"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/galopando"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Galopando"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/galopandoPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/galopandoLoop"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Galopando LOOp"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/galopandoLoopPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de GUITARRA-->
+
+        <TextView
+            android:id="@+id/listaGuitarra"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="GUITARRA"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/guitarra1"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Guitarra 1"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/guitarra1Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/guitarra2"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Guitarra 2"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/guitarra2Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/guitarra3"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Guitarra 3"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/guitarra3Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/guitarra4"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Guitarra 4"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/guitarra4Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/guitarra5"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Guitarra 5"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/guitarra5Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de MANTRA-->
+
+        <TextView
+            android:id="@+id/listaMantra"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="MANTRA"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mantra1"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Mantra 1"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/mantra1Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mantra2"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Mantra 2"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/mantra2Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mantra3"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Mantra 3"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/mantra3Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mantra4"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Mantra 4"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/mantra4Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mantra5"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Mantra 5"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/mantra5Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/mantra6"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Mantra 6"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/mantra6Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de MEDITAÇÃO-->
+
+        <TextView
+            android:id="@+id/listaMeditacao"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="MEDITAÇÃO"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/meditacaoSino"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Meditação com Sinos"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/meditacaoSinoPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/meditacaoTaca"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Meditação com Taças"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/meditacaoTacaPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de PAPEL-->
+
+        <TextView
+            android:id="@+id/listaPapel"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="PAPEL"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/papelDesmoronando"
+                android:layout_width="342dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Papél Desmoronando"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/papelDesmoronandoPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/papelDobrando"
+                android:layout_width="344dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Papel Dobrando"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/papelDobrandoPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/papelDesenhando"
+                android:layout_width="343dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Desenhando"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/papelDesenhandoPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/papelRasgando"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Papel Rasgando"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/papelRasgandoPlay"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de PASSOS-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"/>
+
+        <!--Lista PSICODELICA-->
+
+        <TextView
+            android:id="@+id/listaPsicodelica"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="PSICODELICA"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/psicodelico1"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Psicodelico 1"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/psicodelico1Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/psicodelico2"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Psicodelico 2"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/psicodelico2Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/psicodelico3"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Psicodelico 3"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/psicodelico3Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/psicodelico4"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Psicodelico 4"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/psicodelico4Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/psicodelico5"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Psicodelico 5"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/psicodelico5Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de VENTOS-->
+
+        <TextView
+            android:id="@+id/listaVento"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="VENTOS"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vento1"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Vento 1"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/vento1Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vento2"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Vento 2"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/vento2Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/vento3"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Vento 3"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/vento3Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <!--Lista de SINOS-->
+
+        <TextView
+            android:id="@+id/listaSinos"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="5"
+            android:background="@color/txtGuest"
+            android:fontFamily="@font/allerta"
+            android:gravity="center"
+            android:text="SINOS"
+            android:textColor="@color/corLetra" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sino1"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Sinos 1"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/sino1Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sino2"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Sinos 2"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/sinos2Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/sinos3"
+                android:layout_width="341dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:fontFamily="@font/allerta"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:text="Sinos 3"
+                android:textColor="@color/corLetra" />
+
+            <ImageButton
+                android:id="@+id/sinos3Play"
+                android:layout_width="51dp"
+                android:layout_height="47dp"
+                android:layout_gravity="clip_horizontal|center|clip_vertical|center_horizontal|fill|fill_horizontal|center_vertical|fill_vertical|end"
+                android:layout_marginBottom="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/play"
+                android:foregroundGravity="fill_horizontal|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|center_horizontal|fill"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="@+id/barra_player"
+                app:layout_constraintEnd_toEndOf="@+id/barra_player"
+                app:layout_constraintStart_toStartOf="@+id/barra_player"
+                app:layout_constraintTop_toTopOf="@+id/barra_player"
+                app:layout_constraintVertical_bias="0.74" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

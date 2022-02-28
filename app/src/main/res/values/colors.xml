@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="corFundo">#252626</color>
+    <color name="corLetra">#E8E6E6</color>
+    <color name="corPreta">#000000</color>
+    <color name="corAut">#0f0f0f</color>
+    <color name="botao">#4A2787</color>
+    <color name="corLetra2">#9E9E9E</color>
+    <color name="corzinha">#9C27B0</color>
+    <color name="txtGuest">#8D8D8D</color>
+    <color name="FundoPlayer">#000000</color>
+    <color name="corzassa">#4A2787</color>
+
+
+    <color name="colorPrimary2">#6200EE</color>
+    <color name="colorPrimaryDark2">#3700B3</color>
+    <color name="colorAccent2">#03DAC5</color>
+    <color name="CorFundo2">#252626</color>
+
+</resources>
